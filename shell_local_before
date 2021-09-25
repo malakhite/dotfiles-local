@@ -1,0 +1,9 @@
+# fnm
+path_prepend "$HOME/.fnm"
+eval "`fnm env`"
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# dotnet
+path_prepend "$HOME/.dotnet/tools"
