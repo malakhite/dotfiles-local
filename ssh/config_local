@@ -1,0 +1,16 @@
+Host plith01
+    HostName plith01.pit.homes.com
+    User abbeys
+    IdentityFile ~/.ssh/id_rsa
+    CertificateFile ~/.ssh/id_rsa.pub
+
+Host jenkins
+    Hostname qajenkins01.ec2e.homes.com
+    User abbeys
+    IdentityFile ~/.ssh/id_rsa
+    CertificateFile ~/.ssh/id_rsa.pub
+
+Host *.homes.com
+    User abbeys
+    IdentityFile ~/.ssh/id_rsa
+    CertificateFile ~/.ssh/id_rsa.pub
