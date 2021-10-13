@@ -1,1 +1,6 @@
+export KUBECONFIG="$HOME/source/homes/kubeconfigs/homes-stg:$HOME/source/homes/kubeconfigs/homes-dev:$HOME/source/homes/kubeconfigs/homes-ind:$HOME/source/homes/kubeconfigs/homes-pit"
 
+alias kubedev="kubectl --kubeconfig $HOME/source/homes/kubeconfigs/homes-dev"
+alias kubestg="kubectl --kubeconfig $HOME/source/homes/kubeconfigs/homes-stg"
+alias kubepit="kubectl --kubeconfig $HOME/source/homes/kubeconfigs/homes-pit"
+alias kubeind="kubectl --kubeconfig $HOME/source/homes/kubeconfigs/homes-ind"
