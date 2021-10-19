@@ -1,6 +1,6 @@
-export KUBECONFIG="$HOME/source/homes/kubeconfigs/homes-stg:$HOME/source/homes/kubeconfigs/homes-dev:$HOME/source/homes/kubeconfigs/homes-ind:$HOME/source/homes/kubeconfigs/homes-pit"
+export KUBECONFIG="$HOME/source/homes/kubeconfigs/unified-k8-Sep-2021"
 
-alias kubedev="kubectl --kubeconfig=$HOME/source/homes/kubeconfigs/homes-dev"
-alias kubestg="kubectl --kubeconfig=$HOME/source/homes/kubeconfigs/homes-stg"
-alias kubepit="kubectl --kubeconfig=$HOME/source/homes/kubeconfigs/homes-pit"
-alias kubeind="kubectl --kubeconfig=$HOME/source/homes/kubeconfigs/homes-ind"
+alias kubedev="kubectl --context=dev"
+alias kubestg="kubectl --context=stg"
+alias kubepit="kubectl --context=pit"
+alias kubeind="kubectl --context=ind"
