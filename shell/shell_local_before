@@ -1,4 +1,4 @@
-export KUBECONFIG="$HOME/source/homes/kubeconfigs/unified-k8-Sep-2021"
+export KUBECONFIG="$HOME/source/kubeconfigs/unified-k8-Sep-2021"
 
 alias kubedev="kubectl --context=dev"
 alias kubestg="kubectl --context=stg"
