@@ -4,5 +4,3 @@ alias kubedev="kubectl --context=dev"
 alias kubestg="kubectl --context=stg"
 alias kubepit="kubectl --context=pit"
 alias kubeind="kubectl --context=ind"
-
-alias docker="lima nerdctl"
