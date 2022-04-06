@@ -14,6 +14,8 @@ path_prepend "$GOPATH/bin"
 export EDITOR=/usr/local/bin/nvim
 
 # xTuple QT Client stuff
+path_prepend "/usr/local/opt/llvm/bin"
 path_prepend "/usr/local/postgres/14.2/bin"
 path_prepend "/usr/local/qt/5.15.3/bin"
-export LDFLAGS="-L$(qmake -query QT_INSTALL_LIBS)"
+export LDFLAGS="-L/usr/local/opt/llvm/lib,-L$(qmake -query QT_INSTALL_LIBS)"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
