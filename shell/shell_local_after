@@ -1,1 +1,19 @@
 path_prepend "$HOME:/.dotfiles-local/bin"
+
+# Fix ls alias since BSD ls is lame
+alias ls='ls -G'
+
+# Homebrew and Related Tools
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_AUTO_UPDATE_SECS=86400
+
+# Go
+export GOPATH="$HOME/source/go"
+path_prepend "$GOPATH/bin"
+
+export EDITOR=/usr/local/bin/nvim
+
+# xTuple QT Client stuff
+path_prepend "/usr/local/postgres/14.2/bin"
+path_prepend "/usr/local/qt/5.15.3/bin"
+export LDFLAGS="-L$(qmake -query QT_INSTALL_LIBS)"
