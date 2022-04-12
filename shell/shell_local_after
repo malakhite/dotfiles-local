@@ -1,1 +1,4 @@
 path_prepend "$HOME:/.dotfiles-local/bin"
+
+export FLYCTL_INSTALL="/home/scott/.fly"
+path_prepend "$FLYCTL_INSTALL/bin
